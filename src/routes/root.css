@@ -1,3 +1,67 @@
-.root {
+:root {
+  --layout-space: 2rem;
+}
 
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.top-bar {
+  border-bottom: 1px solid var(--neutral);
+  padding-inline: var(--layout-space);
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  padding: var(--layout-space);
+  border-right: 1px solid var(--neutral);
+  width: min(calc(100% - var(--layout-space)), 20rem);
+  box-sizing: border-box;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  margin-inline: -0.5rem;
+}
+
+.nav__link {
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--black);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.nav__link:hover {
+  color: var(--light);
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.main {
+  padding: var(--layout-space);
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
 }
