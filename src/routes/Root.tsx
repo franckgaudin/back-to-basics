@@ -1,5 +1,6 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import clsx from 'clsx';
+import { Home } from 'react-feather';
 
 import './root.css';
 
@@ -22,10 +23,18 @@ export default function Root() {
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__item">
-                <NavLink className={navLinkClasses} to="/">Home</NavLink>
+                <Link to="/" className="nav__link nav__link--home">
+                  <Home />
+                </Link>
               </li>
               <li className="nav__item">
-                <NavLink className={navLinkClasses} to="/contact">Contact</NavLink>
+
+                <span className="nav__group">HTML & CSS</span>
+                <ul className="nav__list">
+                  <li className="nav__item">
+                  <NavLink className={navLinkClasses} to="/contact">Contact</NavLink>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
