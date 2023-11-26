@@ -49,11 +49,12 @@
   color: var(--black);
   text-decoration: none;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
 }
 
+.nav__link.active,
 .nav__link:hover {
-  color: var(--light);
-  background: var(--secondary);
+  background: var(--neutral-light);
   cursor: pointer;
 }
 

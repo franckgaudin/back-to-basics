@@ -3,6 +3,7 @@
   --secondary: rgb(77, 76, 125);
   --highlight: rgb(249, 148, 23);
   --neutral: rgba(230, 230, 230);
+  --neutral-light: rgba(230, 230, 230, 0.5);
   --dark: rgb(39, 40, 41);
   --light: rgb(255, 255, 255);
 }
