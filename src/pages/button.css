@@ -1,0 +1,31 @@
+.button {
+  --primary: rgb(25 105 245);
+  appearance: unset;
+  height: 2.5rem;
+  padding-inline: 1rem;
+  font-size: 1rem;
+  color: white;
+  border-width: 1px;
+  border-style: block;
+  border-radius: 0.5rem;
+  border-color: transparent;
+  background-color: var(--primary);
+}
+
+.button-2024 {
+  --bg-top: rgb(34 121 255);
+  --bg-bottom: var(--primary);
+  --border-color: rgb(45, 104, 198);
+  --border-color-active: rgb(56, 116, 214);
+  --light: rgb(79, 144, 243);
+
+  background: linear-gradient(var(--bg-top), var(--bg-bottom));
+  border-color: var(--border-color);
+  box-shadow: inset 0 2px var(--light);
+}
+
+.button-2024:active {
+  border-color: var(--border-color-active);
+  background: linear-gradient(var(--bg-bottom), var(--bg-top));
+  box-shadow: none;
+}

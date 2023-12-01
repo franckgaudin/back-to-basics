@@ -1,17 +1,35 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
-import clsx from 'clsx';
-import { Home } from 'react-feather';
+import clsx from "clsx";
+import { Home } from "react-feather";
 
-import './root.css';
+import "./root.css";
+
+const routes = [
+  {
+    id: 1,
+    path: "/button",
+    label: "Button",
+  },
+  {
+    id: 2,
+    path: "/contact",
+    label: "Contact",
+  },
+];
 
 export default function Root() {
-
-  const navLinkClasses = ({ isActive, isPending}: {isActive: boolean, isPending: boolean}) => {
+  const navLinkClasses = ({
+    isActive,
+    isPending,
+  }: {
+    isActive: boolean;
+    isPending: boolean;
+  }) => {
     return clsx("nav__link", {
-      "active": isActive,
-      "pending": isPending
-    })
-  }
+      active: isActive,
+      pending: isPending,
+    });
+  };
 
   return (
     <div className="root">
@@ -28,12 +46,15 @@ export default function Root() {
                 </Link>
               </li>
               <li className="nav__item">
-
                 <span className="nav__group">HTML & CSS</span>
                 <ul className="nav__list">
-                  <li className="nav__item">
-                  <NavLink className={navLinkClasses} to="/contact">Contact</NavLink>
-                  </li>
+                  {routes.map((route) => (
+                    <li className="nav__item" key={route.id}>
+                      <NavLink className={navLinkClasses} to={route.path}>
+                        {route.label}
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
             </ul>
