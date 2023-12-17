@@ -27,7 +27,6 @@
 
 .sidebar {
   padding: var(--layout-space);
-  /* border-right: 1px solid var(--neutral); */
   width: min(calc(100% - var(--layout-space)), 20rem);
   box-sizing: border-box;
 }
@@ -36,6 +35,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 0.875rem;
 }
 
 .nav__item {
@@ -44,7 +44,7 @@
 
 .nav__link {
   display: flex;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   color: var(--black);
   text-decoration: none;
