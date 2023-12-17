@@ -6,7 +6,7 @@
   font-size: 1rem;
   color: white;
   border-width: 1px;
-  border-style: block;
+  border-style: solid;
   border-radius: 0.5rem;
   border-color: transparent;
   background-color: var(--primary);
