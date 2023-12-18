@@ -15,6 +15,11 @@ const routes = [
     path: "/contact",
     label: "Contact",
   },
+  {
+    id: 3,
+    path: "/shadow",
+    label: "Shadow",
+  },
 ];
 
 export default function Root() {

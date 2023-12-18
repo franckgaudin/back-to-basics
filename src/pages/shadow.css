@@ -1,0 +1,17 @@
+.box {
+  aspect-ratio: 1/1;
+  width: 18rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.shadow {
+  --shadow-color: rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 0 0 1px var(--shadow-color),
+    0 1px 1px -0.5px var(--shadow-color),
+    0 3px 3px -1.5px var(--shadow-color),
+    0 6px 6px -3px var(--shadow-color),
+    0 12px 12px -6px var(--shadow-color),
+    0 24px 24px -12px var(--shadow-color);
+}

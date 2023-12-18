@@ -6,6 +6,7 @@ import Root from "./routes/Root.tsx";
 import ErrorPage from "./pages/Error.tsx";
 import ContactPage from "./pages/Contact.tsx";
 import ButtonPage from "./pages/Button.tsx";
+import ShadowPage from "./pages/Shadow.tsx";
 
 import "./index.css";
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/contact", element: <ContactPage /> },
       { path: "/button", element: <ButtonPage /> },
+      { path: "/shadow", element: <ShadowPage /> },
     ],
   },
 ]);
