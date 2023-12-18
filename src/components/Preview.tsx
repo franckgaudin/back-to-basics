@@ -1,4 +1,4 @@
-export default function Preview({ label, children }: React.ComponentPropsWithoutRef<"div"> & { label: string }) {
+export default function Preview({ label, children }: React.ComponentPropsWithoutRef<"div"> & { label?: string }) {
   return (
     <div className="preview">
       <div className="preview-label">

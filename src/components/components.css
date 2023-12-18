@@ -10,3 +10,7 @@
   color: rgb(124, 124, 124);
   font-size: 0.875rem;
 }
+
+.preview-label {
+  min-height: 1.1rem;
+} 

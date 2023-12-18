@@ -1,21 +1,42 @@
+import clsx from "clsx";
+
 import Flex from "../components/Flex";
 import Preview from "../components/Preview";
 
 import "./button.css";
+
+const Button = ({ children, variant = "default", year = "2023" }: React.ComponentPropsWithoutRef<"button"> & { variant?: "default" | "secondary", year? : "2023" | "2024" }) => {
+  const classes = clsx("button",{
+    [`button-${variant}`]: variant !== "default",
+    [`button-${year}`]: year !== "2023",
+  })
+
+  return (
+    <button className={classes}>
+      {children}
+    </button>
+  );
+}
 
 export default function ButtonPage() {
   return (
     <>
       <h1 className="title">Button</h1>
       <div className="playground">
-        <Flex>
-          <Preview label="2023">
-            <button className="button">Manage</button>
-          </Preview>
-          <Preview label="2024">
-            <button className="button button-2024">Manage</button>
-          </Preview>
-        </Flex>
+          <Flex>
+            <Preview label="2023">
+              <Button>Manage</Button>
+            </Preview>
+            <Preview>
+              <Button variant="secondary">Manage</Button>
+            </Preview>
+            <Preview label="2024">
+              <Button year="2024">Manage</Button>
+            </Preview>
+            <Preview>
+              <Button variant="secondary" year="2024">Manage</Button>
+            </Preview>
+          </Flex>
       </div>
     </>
   );
