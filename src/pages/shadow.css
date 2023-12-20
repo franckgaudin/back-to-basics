@@ -1,12 +1,9 @@
-.box {
-  aspect-ratio: 1/1;
-  width: 18rem;
-  background-color: #fff;
-  border-radius: 2rem;
-}
-
-.shadow {
+.box.shadow {
   --shadow-color: rgba(0, 0, 0, 0.06);
+  width: 18rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(#fff, rgb(0 0 0 / 0.02));
+  background-color: #fff;
   box-shadow:
     0 0 0 1px var(--shadow-color),
     0 1px 1px -0.5px var(--shadow-color),

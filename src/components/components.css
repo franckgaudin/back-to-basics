@@ -14,3 +14,10 @@
 .preview-label {
   min-height: 1.1rem;
 } 
+
+.box {
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}

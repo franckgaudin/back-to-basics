@@ -7,6 +7,7 @@ import ErrorPage from "./pages/Error.tsx";
 import ContactPage from "./pages/Contact.tsx";
 import ButtonPage from "./pages/Button.tsx";
 import ShadowPage from "./pages/Shadow.tsx";
+import ColorsPage from "./pages/Colors.tsx";
 
 import "./index.css";
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/contact", element: <ContactPage /> },
       { path: "/button", element: <ButtonPage /> },
       { path: "/shadow", element: <ShadowPage /> },
+      { path: "/colors", element: <ColorsPage /> },
     ],
   },
 ]);

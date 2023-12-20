@@ -1,0 +1,7 @@
+.colors {
+  background-color: rgb(0 0 0 / 0.5)
+}
+
+.color-mix {
+  background-color: color-mix(in srgb, blue 25%, white);
+}

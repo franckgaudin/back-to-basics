@@ -20,6 +20,11 @@ const routes = [
     path: "/shadow",
     label: "Shadow",
   },
+  {
+    id: 4,
+    path: "/colors",
+    label: "Colors",
+  },
 ];
 
 export default function Root() {
