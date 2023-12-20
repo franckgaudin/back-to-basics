@@ -91,6 +91,7 @@
   --rs-landing-demo-dot-color: #e2e3e4; 
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 80%;

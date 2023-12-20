@@ -1,7 +1,47 @@
-.colors {
-  background-color: rgb(0 0 0 / 0.5)
+.neutral {
+  --dark: #212121;
+  --white: #fff;
+  --percentage: 0%;
+  
+  height: 5rem;
+  width: 100%;
+  background-color: color-mix(in oklch, var(--dark), var(--white) var(--percentage));
 }
 
-.color-mix {
-  background-color: color-mix(in srgb, blue 25%, white);
+.neutral-900 {}
+
+.neutral-800 {
+  --percentage: 10%;
+}
+
+.neutral-700 {
+  --percentage: 20%;
+}
+
+.neutral-600 {
+  --percentage: 30%;
+}
+
+.neutral-500 {
+  --percentage: 40%;
+}
+
+.neutral-400 {
+  --percentage: 50%;
+}
+
+.neutral-300 {
+  --percentage: 60%;
+}
+
+.neutral-200 {
+  --percentage: 70%;
+}
+
+.neutral-100 {
+  --percentage: 80%;
+}
+
+.neutral-0 {
+  --percentage: 90%;
 }
