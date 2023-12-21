@@ -1,8 +1,12 @@
+import { useDarkMode } from 'usehooks-ts'
 import { Outlet, NavLink, Link } from "react-router-dom";
 import clsx from "clsx";
-import { Home } from "react-feather";
+import { ToggleButton } from 'react-aria-components';
+
+import { Home, Moon, Sun } from "react-feather";
 
 import "./root.css";
+
 
 const routes = [
   {
@@ -27,24 +31,29 @@ const routes = [
   },
 ];
 
+const navLinkClasses = ({
+  isActive,
+  isPending,
+}: {
+  isActive: boolean;
+  isPending: boolean;
+}) => {
+  return clsx("nav__link", {
+    active: isActive,
+    pending: isPending,
+  });
+};
+
 export default function Root() {
-  const navLinkClasses = ({
-    isActive,
-    isPending,
-  }: {
-    isActive: boolean;
-    isPending: boolean;
-  }) => {
-    return clsx("nav__link", {
-      active: isActive,
-      pending: isPending,
-    });
-  };
+  const { isDarkMode, toggle} = useDarkMode(false);
 
   return (
-    <div className="root">
+    <div className="root" data-mode={isDarkMode ? "dark" : "light"}>
       <div className="top-bar">
         <h1 className="brand">Playground</h1>
+        <ToggleButton className="toggle-mode" onChange={toggle}>
+          { isDarkMode ? <Sun /> : <Moon /> }
+        </ToggleButton>
       </div>
       <div className="wrapper">
         <aside className="sidebar">

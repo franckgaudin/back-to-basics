@@ -8,7 +8,7 @@ import Preview from "../components/Preview";
 import "./colors.css"
 
 const colors = {
-  neutral: [0, 100, 200, 300, 400, 500, 600, 700, 800, 900],
+  neutral: [0, 25, 50, 75, 100, 200, 300, 400, 500, 600, 700, 800, 900],
 }
 
 export default function ColorsPage() {

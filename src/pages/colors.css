@@ -42,6 +42,18 @@
   --percentage: 80%;
 }
 
-.neutral-0 {
+.neutral-75 {
+  --percentage: 85%;
+}
+
+.neutral-50 {
   --percentage: 90%;
+}
+
+.neutral-25 {
+  --percentage: 95%;
+}
+
+.neutral-0 {
+  --percentage: 100%;
 }
