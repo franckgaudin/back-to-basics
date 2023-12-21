@@ -104,12 +104,12 @@
 
 .nav__link {
   display: flex;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.25rem;
   color: var(--text-900);
   text-decoration: none;
   line-height: 1.5;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.0625rem;
 }
 
 .nav__link.active,

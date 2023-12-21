@@ -11,23 +11,18 @@ import "./root.css";
 const routes = [
   {
     id: 1,
-    path: "/button",
-    label: "Button",
+    path: "/colors",
+    label: "Colors",
   },
   {
     id: 2,
-    path: "/contact",
-    label: "Contact",
-  },
-  {
-    id: 3,
     path: "/shadow",
     label: "Shadow",
   },
   {
-    id: 4,
-    path: "/colors",
-    label: "Colors",
+    id: 3,
+    path: "/button",
+    label: "Button",
   },
 ];
 

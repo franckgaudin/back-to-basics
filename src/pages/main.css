@@ -1,0 +1,10 @@
+.tagline {
+  max-width: 50rem;
+  margin: 4rem auto;
+  gap: 1rem;
+}
+
+.display {
+  margin: 0 0 0.5rem;
+  font-size: 3rem;
+}
