@@ -152,6 +152,7 @@
   align-items: center;
   justify-content: center;
   height: 80%;
+  padding: 2rem;
   border-radius: 1rem;
   background: linear-gradient(90deg,var(--surface-0) 10px,transparent 1%) 50%,linear-gradient(var(--surface-0) 10px,transparent 1%) 50%,var(--surface-50);
   background-size: 12px 12px;
