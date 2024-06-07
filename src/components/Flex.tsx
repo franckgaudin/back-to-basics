@@ -1,7 +1,13 @@
+import clsx from "clsx";
+
 import "./components.css";
 
-export default function Flex({
-  children,
-}: React.ComponentPropsWithoutRef<"div">) {
-  return <div className="flex">{children}</div>;
+interface FlexProps extends React.ComponentPropsWithoutRef<"div"> {
+  wrap?: boolean;
+}
+
+export default function Flex(props: FlexProps) {
+  const { wrap, children } = props;
+
+  return <div className={clsx("flex", wrap && "wrap")}>{children}</div>;
 }
