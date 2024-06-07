@@ -5,9 +5,11 @@ import "./isolation.css";
 
 function Modal({ onClose }: { onClose: () => void }) {
   return (
-    <div className="modal">
-      <div>I'm a modal dialog</div>
-      <button onClick={onClose}>Close</button>
+    <div className="modal-container">
+      <div className="modal">
+        <div>I'm a modal dialog</div>
+        <button onClick={onClose}>Close</button>
+      </div>
     </div>
   );
 }
@@ -22,7 +24,7 @@ export default function IsolationPage() {
       {showModal &&
         createPortal(
           <Modal onClose={() => setShowModal(false)} />,
-          document.body,
+          document.getElementById("root")!,
         )}
     </>
   );
