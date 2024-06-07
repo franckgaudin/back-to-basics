@@ -1,0 +1,26 @@
+.isolate {
+  isolation: isolate;
+}
+
+.modal-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(30, 30, 31, 0.3);
+}
+
+.modal {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  background-color: white;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 12px;
+  width: 250px;
+  aspect-ratio: 2/1;
+}

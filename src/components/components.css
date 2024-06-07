@@ -3,6 +3,10 @@
   gap: 2rem;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .stack {
   display: flex;
   flex-direction: column;
@@ -19,7 +23,7 @@
 
 .preview-label {
   min-height: 1.1rem;
-} 
+}
 
 .box {
   width: 10rem;

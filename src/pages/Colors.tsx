@@ -23,7 +23,7 @@ export default function ColorsPage() {
             <legend>Select base color</legend> 
             <input type="color" value={baseColor} onChange={event => setBaseColor(event.target.value)}/>
           </fieldset>
-          <Flex>
+          <Flex wrap>
             {colors.neutral.map(
               (color, index) => (
                 <Preview key={index} label={`neutral-${color}`}>

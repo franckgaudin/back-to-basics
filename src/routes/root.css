@@ -46,9 +46,21 @@
 }
 
 .root {
+  position: relative;
   display: flex;
   flex-direction: column;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   height: 100%;
   color: var(--text-900);
   background: var(--surface-0);
@@ -154,7 +166,10 @@
   height: 80%;
   padding: 2rem;
   border-radius: 1rem;
-  background: linear-gradient(90deg,var(--surface-0) 10px,transparent 1%) 50%,linear-gradient(var(--surface-0) 10px,transparent 1%) 50%,var(--surface-50);
+  background:
+    linear-gradient(90deg, var(--surface-0) 10px, transparent 1%) 50%,
+    linear-gradient(var(--surface-0) 10px, transparent 1%) 50%,
+    var(--surface-50);
   background-size: 12px 12px;
   border: 1px solid var(--border);
 }
