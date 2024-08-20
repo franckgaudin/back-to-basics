@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 
+import {Button} from "./Button.tsx";
+
 import "./isolation.css";
 
 function Modal({ onClose }: { onClose: () => void }) {
@@ -8,7 +10,7 @@ function Modal({ onClose }: { onClose: () => void }) {
     <div className="modal-container">
       <div className="modal">
         <div>I'm a modal dialog</div>
-        <button onClick={onClose}>Close</button>
+        <Button onClick={onClose} year="2024">Close</Button>
       </div>
     </div>
   );
@@ -18,14 +20,15 @@ export default function IsolationPage() {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <button onClick={() => setShowModal(true)}>
-        Show modal using a portal
-      </button>
+      <h1 className="title">Isolation</h1>
+      <div className="playground">
+      <Button onClick={() => setShowModal(true)} variant="secondary" year="2024">Show modal using a portal</Button>
       {showModal &&
         createPortal(
           <Modal onClose={() => setShowModal(false)} />,
           document.getElementById("root")!,
         )}
+      </div>
     </>
   );
 }

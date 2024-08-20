@@ -5,14 +5,14 @@ import Preview from "../components/Preview";
 
 import "./button.css";
 
-const Button = ({ children, variant = "default", year = "2023" }: React.ComponentPropsWithoutRef<"button"> & { variant?: "default" | "secondary", year? : "2023" | "2024" }) => {
+export const Button = ({ children, variant = "default", year = "2023", ...other }: React.ComponentPropsWithoutRef<"button"> & { variant?: "default" | "secondary", year? : "2023" | "2024" }) => {
   const classes = clsx("button",{
     [`button-${variant}`]: variant !== "default",
     [`button-${year}`]: year !== "2023",
   })
 
   return (
-    <button className={classes}>
+    <button className={classes} {...other}>
       {children}
     </button>
   );
