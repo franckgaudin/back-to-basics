@@ -1,5 +1,3 @@
-import Stack from "../components/Stack";
-
 import "./main.css";
 
 export default function MainPage() {

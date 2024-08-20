@@ -8,6 +8,8 @@ import ButtonPage from "../pages/Button.tsx";
 import ShadowPage from "../pages/Shadow.tsx";
 import ColorsPage from "../pages/Colors.tsx";
 import IsolationPage from "../pages/Isolation.tsx";
+import ChallengeLayout from "../pages/challenges/Layout.tsx";
+import ChallengePage from "../pages/challenges/Page.tsx";
 
 export const routes = [
   {
@@ -30,6 +32,11 @@ export const routes = [
     path: "/isolation",
     label: "Isolation",
   },
+  {
+    id: 5,
+    path: "/challenge/day-1",
+    label: "Day 1",
+  }
 ];
 
 export const router = createBrowserRouter([
@@ -44,6 +51,15 @@ export const router = createBrowserRouter([
       { path: "/shadow", element: <ShadowPage /> },
       { path: "/colors", element: <ColorsPage /> },
       { path: "/isolation", element: <IsolationPage /> },
+      { path: "/challenge",
+        element: <ChallengeLayout />,
+        children: [
+          {
+            path: "/challenge/:id",
+            element: <ChallengePage />,
+          }
+        ],
+      },
     ],
   },
 ]);

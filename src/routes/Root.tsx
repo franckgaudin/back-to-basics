@@ -45,7 +45,7 @@ export default function Root() {
               <li className="nav__item">
                 <span className="nav__group">HTML & CSS</span>
                 <ul className="nav__list">
-                  {routes.map((route) => (
+                  {routes.filter((route) => !route.path.startsWith("/challenge")).map((route) => (
                     <li className="nav__item" key={route.id}>
                       <NavLink className={navLinkClasses} to={route.path}>
                         {route.label}
@@ -54,6 +54,19 @@ export default function Root() {
                   ))}
                 </ul>
               </li>
+              <li className="nav__item">
+                <span className="nav__group">CHALLENGE</span>
+                <ul className="nav__list">
+                  {routes.filter((route) => route.path.startsWith("/challenge")).map((route) => (
+                    <li className="nav__item" key={route.id}>
+                      <NavLink className={navLinkClasses} to={route.path}>
+                        {route.label}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+
             </ul>
           </nav>
         </aside>
